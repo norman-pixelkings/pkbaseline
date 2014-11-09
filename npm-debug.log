@@ -1,0 +1,177 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '--global', 'wraith' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'wraith', null ]
+5 verbose cache add name=undefined spec="wraith" args=["wraith",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'wraith',
+6 verbose parsed url   path: 'wraith',
+6 verbose parsed url   href: 'wraith' }
+7 silly lockFile 25846fff-wraith wraith
+8 verbose lock wraith /Users/normanvandermull/.npm/25846fff-wraith.lock
+9 silly lockFile 25846fff-wraith wraith
+10 silly lockFile 25846fff-wraith wraith
+11 verbose addNamed [ 'wraith', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 60335c32-wraith wraith@
+14 verbose lock wraith@ /Users/normanvandermull/.npm/60335c32-wraith.lock
+15 silly addNameRange { name: 'wraith', range: '*', hasData: false }
+16 verbose request where is /wraith
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 164239b4b489dba3
+19 verbose url raw /wraith
+20 verbose url resolving [ 'https://registry.npmjs.org/', './wraith' ]
+21 verbose url resolved https://registry.npmjs.org/wraith
+22 verbose request where is https://registry.npmjs.org/wraith
+23 info trying registry request attempt 1 at 15:06:24
+24 http GET https://registry.npmjs.org/wraith
+25 http 200 https://registry.npmjs.org/wraith
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Sat, 08 Nov 2014 14:06:25 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"4IJL57XL1E2OMZX7GQ86DVOY3"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '18692',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-ams4149-AMS',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1415455584.377832,VS0,VE805',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'wraith', range: '*', hasData: true }
+28 silly addNameRange versions [ 'wraith',
+28 silly addNameRange   [ '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6' ] ]
+29 verbose addNamed [ 'wraith', '1.0.6' ]
+30 verbose addNamed [ '1.0.6', '1.0.6' ]
+31 silly lockFile b765fb12-wraith-1-0-6 wraith@1.0.6
+32 verbose lock wraith@1.0.6 /Users/normanvandermull/.npm/b765fb12-wraith-1-0-6.lock
+33 silly lockFile 2f6796c0-pmjs-org-wraith-wraith-1-0-6-tgz https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz
+34 verbose lock https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz /Users/normanvandermull/.npm/2f6796c0-pmjs-org-wraith-wraith-1-0-6-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz',
+35 verbose addRemoteTarball   'ee8ed2fe60dfe37395c3b6e55d2e707f4181bbeb' ]
+36 info retry fetch attempt 1 at 15:06:26
+37 verbose fetch to= /var/folders/5z/cpq128p578j8rg70mt2yp28h0000gn/T/npm-18306-7wK3S-Aw/registry.npmjs.org/wraith/-/wraith-1.0.6.tgz
+38 http GET https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz
+39 http 200 https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz
+40 silly lockFile 2f6796c0-pmjs-org-wraith-wraith-1-0-6-tgz https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz
+41 silly lockFile 2f6796c0-pmjs-org-wraith-wraith-1-0-6-tgz https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz
+42 silly lockFile b765fb12-wraith-1-0-6 wraith@1.0.6
+43 silly lockFile b765fb12-wraith-1-0-6 wraith@1.0.6
+44 silly lockFile 60335c32-wraith wraith@
+45 silly lockFile 60335c32-wraith wraith@
+46 silly resolved [ { name: 'wraith',
+46 silly resolved     version: '1.0.6',
+46 silly resolved     description: 'A responsive screenshot comparison tool. Based on the Ruby version available at http://github.comm/BBC-News/wraith',
+46 silly resolved     license: 'MIT',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/jamesryanbell/node-wraith' },
+46 silly resolved     bin: { wraith: 'cli.js' },
+46 silly resolved     author:
+46 silly resolved      { name: 'James Bell',
+46 silly resolved        email: 'james@james-bell.co.uk',
+46 silly resolved        url: 'http://james-bell.co.uk' },
+46 silly resolved     engines: { node: '>=0.10.0' },
+46 silly resolved     scripts: {},
+46 silly resolved     files: [ 'index.js', 'cli.js', 'lib/*', 'gallery.html', 'snap.js' ],
+46 silly resolved     keywords:
+46 silly resolved      [ 'page',
+46 silly resolved        'website',
+46 silly resolved        'site',
+46 silly resolved        'web',
+46 silly resolved        'url',
+46 silly resolved        'resolution',
+46 silly resolved        'size',
+46 silly resolved        'screenshot',
+46 silly resolved        'screen',
+46 silly resolved        'responsive',
+46 silly resolved        'cli',
+46 silly resolved        'wraith',
+46 silly resolved        'phantomjs',
+46 silly resolved        'triflejs',
+46 silly resolved        'slimerjs' ],
+46 silly resolved     dependencies:
+46 silly resolved      { chalk: '~0.4.0',
+46 silly resolved        nopt: '~2.1.2',
+46 silly resolved        crawl: '~0.3.1',
+46 silly resolved        async: '~0.2.10',
+46 silly resolved        mkdirp: '~0.3.5',
+46 silly resolved        mustache: '~0.8.1',
+46 silly resolved        rimraf: '~2.2.6' },
+46 silly resolved     devDependencies: {},
+46 silly resolved     bugs: { url: 'https://github.com/jamesryanbell/node-wraith/issues' },
+46 silly resolved     homepage: 'https://github.com/jamesryanbell/node-wraith',
+46 silly resolved     _id: 'wraith@1.0.6',
+46 silly resolved     _shasum: 'ee8ed2fe60dfe37395c3b6e55d2e707f4181bbeb',
+46 silly resolved     _from: 'wraith@',
+46 silly resolved     _npmVersion: '1.4.9',
+46 silly resolved     _npmUser: { name: 'jamesryanbell', email: 'james@james-bell.co.uk' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'ee8ed2fe60dfe37395c3b6e55d2e707f4181bbeb',
+46 silly resolved        tarball: 'http://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/wraith/-/wraith-1.0.6.tgz' } ]
+47 info install wraith@1.0.6 into /usr/local/lib
+48 info installOne wraith@1.0.6
+49 verbose lib/node_modules/wraith unbuild
+50 verbose tar unpack /Users/normanvandermull/.npm/wraith/1.0.6/package.tgz
+51 silly lockFile f6331062-sr-local-lib-node-modules-wraith tar:///usr/local/lib/node_modules/wraith
+52 verbose lock tar:///usr/local/lib/node_modules/wraith /Users/normanvandermull/.npm/f6331062-sr-local-lib-node-modules-wraith.lock
+53 silly lockFile e0879a92-ull-npm-wraith-1-0-6-package-tgz tar:///Users/normanvandermull/.npm/wraith/1.0.6/package.tgz
+54 verbose lock tar:///Users/normanvandermull/.npm/wraith/1.0.6/package.tgz /Users/normanvandermull/.npm/e0879a92-ull-npm-wraith-1-0-6-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/wraith'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/wraith']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/wraith',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/wraith',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.0.0
+59 error command "node" "/usr/local/bin/npm" "install" "--global" "wraith"
+60 error cwd /Users/normanvandermull/Sites/sassbites
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/wraith
+64 error fstream_path /usr/local/lib/node_modules/wraith
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/wraith'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]

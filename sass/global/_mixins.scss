@@ -1,0 +1,79 @@
+/*doc
+---
+title: make-button
+category: Global - Mixin
+---
+
+@mixin make-button
+
+-    __$btn-color__ - sets backalround color
+-    __$btn-text-color: white__ -ets text color
+-    __$disabled: false__ - if set to 'true' removes hover effect and sets pointer to default
+
+````
+.class_name {
+  @include make-button(color(brand-primary));
+}
+````
+
+*/
+
+@mixin make-button($btn-color, $btn-text-color: white, $disabled: false) {
+    background-color: $btn-color;
+    color: $btn-text-color;
+    display: inline-block;
+    font-family: $base-font-family;
+    border: none; // this fixes buttons elements with this style
+    font-size: pem(16);
+    padding: pem(9) pem(40);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    @if $disabled != disabled {
+        transition: background 0.2s ease-in 0s;
+        &:hover {
+            background-color: darken($btn-color, 6%);
+            color: $btn-text-color;
+            text-decoration: none;
+        }
+    }
+    @if $disabled == true {
+        cursor: default;
+        &:hover {
+            background-color: $btn-color;
+            color: $btn-text-color;
+            text-decoration: none;
+        }
+    }
+}
+
+/*doc
+---
+title: print-property-map
+category: Global - Mixin
+---
+
+@mixin print-property-map
+
+-    __$map-name__ - inputs map name to print
+
+Outputs property/value css pairs from a map with 'property: value,' key/value pairs
+
+*/
+
+@mixin print-property-map($map-name) {
+  @each $property, $value in $map-name {
+    #{$property}: $value;
+  }
+}
+
+
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

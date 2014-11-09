@@ -1,0 +1,63 @@
+ /*doc
+---
+title: Popular Video
+category: Component - Popular Video
+---
+
+`data-eq-pts="large:x"` is used to specify when this component breaks from single to two columns
+
+`.card` Context comes from the [Card](/styleguide/layout_-_card.html) layout, and refers to negative margin to stretch image across entire card.
+
+`data-eq-state="small"` is a layout where the text is on top of the video, so color is switched to a lighter theme
+
+```html_example
+
+<div class="popular-video" data-eq-pts="small: 0, large:500">
+  <a href="#" class="popular-video-link">
+    <div class="popular-video-img-container">
+      <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+    </div>
+    <div class="popular-video-contents">
+      <h1 class="popular-video-title">Video Title</h1>
+      <div class="popular-video-length">5m 40s</div>
+    </div>
+  </a>
+</div>
+
+```
+*/
+
+.popular-video {
+
+}
+
+.popular-video-link {
+  display: block;
+}
+
+.popular-video-img-container {
+  @extend %video-overlay;
+  .card [data-eq-state = "small"] & {
+    @extend %bleeding-container;
+  }
+}
+.popular-video-img {
+  @extend %responsive-image;
+}
+.popular-video-contents {
+
+}
+.popular-video-title {
+  @extend %secondary-title;
+  [data-eq-state = "small"] & {
+    color: color(white);
+  }
+}
+.popular-video-length {
+  @extend %small-copy;
+  [data-eq-state = "small"] & {
+    color: color(white);
+  }
+}
+
+
