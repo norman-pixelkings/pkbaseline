@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Micah Godbolt",
-  "license": "ISC",
+  "author": "Norman van der Mull",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bower-concat": "^0.4.0",
@@ -15,6 +14,7 @@
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-hologram": "0.0.4",
+    "grunt-csscss": "^0.6.2",
     "grunt-phantomcss": "git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner",
     "grunt-photobox": "^0.8.1",
     "grunt-shell": "^1.1.1"
