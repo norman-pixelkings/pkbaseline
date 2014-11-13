@@ -2,6 +2,13 @@ Starterkit Pixelkings
 
 =============
 
+# kop1
+## kop2
+### kop3
+#### kop4
+##### kop5
+###### kop6
+
 # This is the Pixelkings frontend starter kit for creating a website from scratch. The main components are:
 
 SASS OOCSS framework from Harry Roberts
@@ -21,6 +28,7 @@ Naming convention ....
 ##SMACSS
 Architecture of the stylesheet
 
+##Icons
 
 
 ##INSTALLING
