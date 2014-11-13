@@ -12,7 +12,7 @@ category: Component - Popular Video
 
 ```html_example
 
-<div class="popular-video" data-eq-pts="small: 0, large:500">
+<div class="popular-video" data-eq-pts="small: 0, large:500" style="border: 10px solid red;">
   <a href="#" class="popular-video-link">
     <div class="popular-video-img-container">
       <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">

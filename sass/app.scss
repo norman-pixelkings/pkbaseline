@@ -1,0 +1,275 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+
+
+@import "settings.fonts";
+
+@import "settings.vars";
+
+@import "../bower_components/inuit-defaults/settings.defaults";
+
+// $inuit-base-font-size:          16px !default;
+// $inuit-base-line-height:        24px !default;
+// $inuit-base-text-color:         #333 !default;
+// $inuit-base-background-color:   #fff !default;
+// $inuit-namespace:               null !default;
+
+@import "../bower_components/inuit-responsive-settings/settings.responsive";
+
+// $breakpoints: (
+//        "palm"          "screen and (max-width: 719px)",
+        "lap"           "screen and (min-width: 720px) and (max-width: 1023px)",
+        "lap-and-up"    "screen and (min-width: 720px)",
+        "portable"      "screen and (max-width: 1023px)",
+        "desk"          "screen and (min-width: 1024px)",
+        "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+) !default;
+
+
+// Tools: Site-wide mixins and functions.
+@import "../bower_components/inuit-functions/tools.functions";
+
+
+@import "../bower_components/inuit-mixins/tools.mixins";
+@import "../bower_components/inuit-responsive-tools/tools.responsive";
+
+$inuit-responsive-settings: false !default;
+
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-reset/generic.reset";
+@import "../bower_components/inuit-shared/generic.shared";
+
+// Base: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+@import "../bower_components/inuit-page/base.page";
+
+$inuit-heading-size-1:  48px;
+$inuit-heading-size-2:  36px;
+$inuit-heading-size-3:  24px !default;
+$inuit-heading-size-4:  20px !default;
+$inuit-heading-size-5:  16px !default;
+$inuit-heading-size-6:  14px !default;
+
+h1,h2 { font-weight: 300; }
+
+
+@import "../bower_components/inuit-headings/base.headings";
+
+// Predefine the variables below in order to alter and enable specific features.
+
+// $inuit-heading-size-1:  36px !default;
+// $inuit-heading-size-2:  30px !default;
+// $inuit-heading-size-3:  24px !default;
+// $inuit-heading-size-4:  20px !default;
+// $inuit-heading-size-5:  16px !default;
+// $inuit-heading-size-6:  14px !default;
+
+@import "../bower_components/inuit-paragraphs/base.paragraphs";
+
+//$inuit-lede-size:   1.125 !default;
+
+@import "../bower_components/inuit-lists/base.lists";
+@import "../bower_components/inuit-images/base.images";
+
+// Objects: Objects, abstractions, and design patterns (e.g. .media {}).
+
+// $inuit-enable-box--flush:                          false;
+// $inuit-enable-box--tiny:                           false;
+// $inuit-enable-box--small:                          false;
+// $inuit-enable-box--large:                          false;
+// $inuit-enable-box--huge:                           false;
+
+@import "../bower_components/inuit-box/objects.box";
+
+// $inuit-enable-media--tiny:                         false;
+// $inuit-enable-media--small:                        false;
+// $inuit-enable-media--large:                        false;
+// $inuit-enable-media--huge:                         false;
+// $inuit-enable-media--rev:                          false;
+// $inuit-enable-media--flush:                        false;
+// $inuit-enable-media--responsive:                   false;
+
+//@import "../bower_components/inuit-media/objects.media";
+
+
+
+@import "../bower_components/inuit-flag/objects.flag";
+
+// $inuit-enable-flag--tiny:                          false;
+// $inuit-enable-flag--small:                         false;
+// $inuit-enable-flag--large:                         false;
+// $inuit-enable-flag--huge:                          false;
+// $inuit-enable-flag--rev:                           false;
+// $inuit-enable-flag--flush:                         false;
+// $inuit-enable-flag--top:                           false;
+// $inuit-enable-flag--bottom:                        false;
+// $inuit-enable-flag--responsive:                    false;
+
+
+@import "../bower_components/inuit-list-bare/objects.list-bare";
+
+// $inuit-enable-list-block--tiny:                    false;
+// $inuit-enable-list-block--small:                   false;
+// $inuit-enable-list-block--large:                   false;
+// $inuit-enable-list-block--huge:                    false;
+
+@import "../bower_components/inuit-list-block/objects.list-block";
+
+// $inuit-list-block-namespace:        $inuit-namespace !default;
+// $inuit-enable-list-block--tiny:     false !default;
+// $inuit-enable-list-block--small:    false !default;
+// $inuit-enable-list-block--large:    false !default;
+// $inuit-enable-list-block--huge:     false !default;
+
+
+// $inuit-enable-list-inline--delimited:
+
+@import "../bower_components/inuit-list-inline/objects.list-inline";
+
+// $inuit-enable-list-ui--tiny:                       false;
+// $inuit-enable-list-ui--small:                      false;
+// $inuit-enable-list-ui--large:                      false;
+// $inuit-enable-list-ui--huge:                       false;
+
+@import "../bower_components/inuit-list-ui/objects.list-ui";
+
+// $inuit-enable-table--fixed:                        false;
+// $inuit-enable-table--compact:                      false;
+// $inuit-enable-table--cosy:                         false;
+// $inuit-enable-table--comfy:                        false;
+// $inuit-enable-table--cells:                        false;
+// $inuit-enable-table--rows:                         false;
+// $inuit-enable-table--columns:                      false;
+
+@import "../bower_components/inuit-tables/objects.tables";
+
+// $inuit-enable-btn--small:                          false;
+// $inuit-enable-btn--large:                          false;
+// $inuit-enable-btn--full:                           false;
+// $inuit-enable-btn--pill:                           false;
+
+@import "../bower_components/inuit-buttons/objects.buttons";
+
+// $inuit-btn-namespace:       $inuit-namespace !default;
+
+// $inuit-btn-padding:         halve($inuit-base-spacing-unit) !default;
+// $inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
+// $inuit-btn-padding--large:  double($inuit-btn-padding) !default;
+// $inuit-btn-background:      #4a8ec2 !default;
+// $inuit-btn-color:           #fff !default;
+// $inuit-btn-border-width:    1px !default;
+// $inuit-btn-border-style:    solid !default;
+// $inuit-btn-border-color:    $inuit-btn-background !default;
+// $inuit-btn-radius:          0 !default;
+
+// $inuit-enable-btn--small:   false !default;
+// $inuit-enable-btn--large:   false !default;
+// $inuit-enable-btn--full:    false !default;
+// $inuit-enable-btn--pill:    false !default;
+
+@import "../bower_components/inuit-tabs/objects.tabs";
+
+//$inuit-tabs-namespace: $inuit-namespace !default;
+
+// Components: Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t get involved with.
+// Trumps: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+
+@import "../bower_components/inuit-clearfix/trumps.clearfix";
+
+@import "../bower_components/inuit-print/trumps.print";
+
+// $inuit-enable-margins:                              true;
+// $inuit-enable-margins--tiny:                        true;
+// $inuit-enable-margins--small:                       true;
+// $inuit-enable-margins--large:                       true;
+// $inuit-enable-margins--huge:                        true;
+
+// $inuit-enable-margins--negative:                    true;
+// $inuit-enable-margins--negative-tiny:               true;
+// $inuit-enable-margins--negative-small:              true;
+// $inuit-enable-margins--negative-large:              true;
+// $inuit-enable-margins--negative-huge:               true;
+
+// $inuit-enable-margins--none:                        true;
+
+// $inuit-enable-paddings:                             true;
+// $inuit-enable-paddings--tiny:                       true;
+// $inuit-enable-paddings--small:                      true;
+// $inuit-enable-paddings--large:                      true;
+// $inuit-enable-paddings--huge:                       true;
+
+// $inuit-enable-paddings--none:                       true;
+
+@import "../bower_components/inuit-spacing/trumps.spacing";
+
+// $inuit-use-fractions: true;
+
+// $inuit-enable-responsive-margins:                   true;
+// $inuit-enable-responsive-margins--tiny:             true;
+// $inuit-enable-responsive-margins--small:            true;
+// $inuit-enable-responsive-margins--large:            true;
+// $inuit-enable-responsive-margins--huge:             true;
+// $inuit-enable-responsive-margins--negative:         true;
+// $inuit-enable-responsive-margins--negative-tiny:    true;
+// $inuit-enable-responsive-margins--negative-small:   true;
+// $inuit-enable-responsive-margins--negative-large:   true;
+// $inuit-enable-responsive-margins--negative-huge:    true;
+// $inuit-enable-responsive-margins--none:             true;
+// $inuit-enable-responsive-paddings:                  true;
+// $inuit-enable-responsive-paddings--tiny:            true;
+// $inuit-enable-responsive-paddings--small:           true;
+// $inuit-enable-responsive-paddings--large:           true;
+// $inuit-enable-responsive-paddings--huge:            true;
+// $inuit-enable-responsive-paddings--none:            true;
+// $inuit-enable-responsive-paddings:                  true;
+
+@import "../bower_components/inuit-spacing-responsive/trumps.spacing-responsive";
+
+// @import "../bower_components/susy/sass/susy";
+
+// $susy: (
+//        columns: 12,  // The number of columns in your grid
+//        gutters: 1/4, // The size of a gutter in relation to a single column
+//);
+
+//@import "compass";
+//@import "susy";
+//@import "breakpoint";
+//@import "global/**/*";
+//@import "base/**/*";
+//@import "components/**/*";
+//@import "layout/**/*";
+//
+//.component {
+//    background: #ababab;
+//    padding: 20px;
+//    color: white;
+//    font-family: sans-serif;
+//}

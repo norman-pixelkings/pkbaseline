@@ -1,0 +1,64 @@
+// basic settings
+$inuit-base-font-size: 14px;
+$inuit-base-line-height: 22px;
+
+$inuit-margin: $inuit-base-spacing-unit;
+
+// colors
+$white: #fff;
+$black: #18181D;
+$extraDarkGrey: #23232A;
+$darkGrey: #404041;
+$lightGrey: #BBBDBF;
+$grey: #979797;
+$mpzRed: #AC243D;
+$mpzOrange: #F5A300;
+$mpzbrown: #BE9059;
+$mpzPurple: #B1246B;
+$mpzPink: #F4ADA7;
+$mpzBlue: #26A9E0;
+$mpzGrey: #C1C1C1;
+$mpzLime: #97B40D;
+
+
+// default colors
+$pk-text-color: $black;
+
+
+// max-width
+$max-layout-width: 1040px;
+
+// header sizes
+$h1-size:           32px; // .alpha
+$h2-size:           26px; // .beta
+$h3-size:           22px;  // .gamma
+$h4-size:           28px;  // .delta
+$h5-size:           16px; // .epsilon
+$h6-size:           16px; // .zeta
+
+
+$leftOffset: 48px;
+
+$use-island: true;
+$use-greybox: true;
+$use-nav: true;
+$use-beautons: true;
+$brand-round: 2px;
+
+$base-font-family: 'Source Sans Pro';
+$base-ui-color: $mpzBlue;
+$brand-color: $mpzBlue;
+$brand-face: 'Source Sans Pro';
+$brand-round: 2px;
+$heading-font-family: 'Source Sans Pro';
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+}
+
+
+// breakpoints
+$breakpoint1: 40em; // 640px
+$breakpoint2: 63em; // 1008px

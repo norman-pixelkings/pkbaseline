@@ -20,7 +20,7 @@ module.exports = function (grunt) {
                 dest: 'build/js/_bower.js',
                 exclude: [
                     'Cortana',
-                ],
+                ]
             }
         },
 
@@ -31,18 +31,18 @@ module.exports = function (grunt) {
                 sassDir: 'sass',
                 cssDir: 'build/css',
                 bundleExec: true,
-                require: ['sass-globbing', 'susy', 'breakpoint'],
+                require: ['sass-globbing', 'susy', 'breakpoint']
             },
             dev: {
                 options: {
                     environment: 'development',
-                    outputStyle: 'expanded',
+                    outputStyle: 'expanded'
                 }
             },
             dist: {
                 options: {
                     environment: 'production',
-                    outputStyle: 'compact',
+                    outputStyle: 'compact'
                 }
             },
         },
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'svg_icons/compressed',
                     src: ['*.svg'],
-                    dest: 'svg_icons/output'
+                    dest: 'build/svg_icons/output'
                 }],
                 options: {
                     cssprefix: '.icon-',
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
                     altRunner: true,
                     screenshots: 'phantomcss/baselines',
                     results: 'phantomcss/results',
-                    viewportSize: [1280, 800],
+                    viewportSize: [1280, 800]
                 },
                 src: [
                     './sass/**/*.js'
@@ -164,13 +164,13 @@ module.exports = function (grunt) {
 
         csscss: {
             dist: {
-                src: ['build/css/style.css'],
+                src: ['build/css/style.css']
             },
             options: {
                 colorize: false,
                 verbose: true,
-                outputJson: false,
-                minMatch: 2,
+                outputJson: true,
+                minMatch: 10,
                 compass: true
                 //ignoreProperties: 'padding',
                 //ignoreSelectors: '.rule-a'
@@ -189,14 +189,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-photobox');
     grunt.loadNpmTasks('grunt-csscss');
 
-
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-grunticon');
 
-
     grunt.registerTask('icons', ['clean', 'svgmin', 'grunticon']);
-
 
     grunt.registerTask('default', [
         'shell:bundler',
