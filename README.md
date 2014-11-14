@@ -17,7 +17,7 @@ the relationships between classes.
 
 
 <a name="components"></a>
-## [Components](components.md)
+## Components
 
 Components are UI patterns. They usually need to style multiple elements within
 their HTML tree.
